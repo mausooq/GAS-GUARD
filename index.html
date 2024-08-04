@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gas Sensor Data</title>
+  <script>
+    async function fetchGasData() {
+      try {
+        const response = await fetch('http://192.168.255.144/gas');  // Replace with your ESP8266 IP address
+        const data = await response.text();
+        document.getElementById('gas-value').innerHTML = data;
+      } catch (error) {
+        console.error('Error fetching gas data:', error);
+      }
+    }
+
+    setInterval(fetchGasData, 1000);  // Fetch data every second
+  </script>
+</head>
+<body>
+  <h1>Gas Sensor Data</h1>
+  <div id="gas-value">Loading...</div>
+</body>
+</html>
