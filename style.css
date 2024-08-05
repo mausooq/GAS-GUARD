@@ -2,10 +2,18 @@ body{
     background: #005C97;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #242563, #004a79);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #242563, #004a79); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-padding-top: 15%;
+padding-top: 8%;
 
 
 }
+.heading1{
+    color:rgb(255, 247, 0) ;
+    font-weight: bold;
+    font-size:70px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
 .container{
     background-color: rgba(255, 255, 255, 0.121);
     width: 60%;
@@ -29,5 +37,18 @@ h1{
     text-align: center;
     padding-bottom: 20px;
     font-size: 20px;
+    font-weight: bold;
+}
+ul{
+    text-align: center;
+    flex-direction: column;
 }
 
+ul li{
+    list-style: none;
+    color: white;
+    font-size: 18px;
+    text-align: start;
+    margin-left: 48%;
+
+}
